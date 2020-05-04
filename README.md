@@ -8,6 +8,9 @@ Using AWS CLI to create a dynamic list of external IPs to scan via Tenable.sc.  
 - [PyTenable](https://pytenable.readthedocs.io/en/stable/)
 - Python 3
 - Bash
+- Internet access
+- Connection to Tenable.sc
+- Connectoin to AWS
 ---
 ---
 ## Required Updates to files
