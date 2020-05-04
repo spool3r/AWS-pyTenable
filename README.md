@@ -7,7 +7,7 @@ Using AWS CLI to create a dynamic list of external IPs to scan via Tenable.sc.  
   - [AWS CLI Named Profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 - [PyTenable](https://pytenable.readthedocs.io/en/stable/)
 - Python 3
-- ash
+- Bash
 ---
 ---
 ## Required Updates to files
