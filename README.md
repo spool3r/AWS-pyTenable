@@ -9,7 +9,7 @@ Using AWS CLI to create a dynamic list of external IPs to scan via Tenable.sc.  
 - ash
 
 ## Required Updates to files
-#### awsDownloader.sh
+### awsDownloader.sh
 Update the path to the location of the script
 ```
 scriptPath = /path/to/folder
@@ -48,7 +48,7 @@ sa-east-1
 
 
 
-#### pyTenable.py
+### pyTenable.py
 Update the path to the location of the script
 ```
 script_path = /path/to/folder
