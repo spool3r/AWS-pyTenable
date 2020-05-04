@@ -48,8 +48,9 @@ sa-east-1
 )
 ```
 
+
 ---
----
+
 
 ### pyTenable.py
 Update the path to the location of the script
@@ -71,5 +72,4 @@ Update to your username and password for Tenable.sc.  More information about the
 ```
 sc.login('username', 'passwords')
 ```
----
 ---
