@@ -73,3 +73,6 @@ Update to your username and password for Tenable.sc.  More information about the
 sc.login('username', 'passwords')
 ```
 ---
+
+## Launching Script
+To launch the script ```/path/to/folder/awsDownload.sh```.  This will use the AWS CLI to download the ELB and EC2 information, parse it, and then launch the pyTenable.py script.  This can be done manaully or in a crontab.
