@@ -10,11 +10,12 @@ Using AWS CLI to create a dynamic list of external IPs to scan via Tenable.sc.  
 
 ## Required Updates to files
 #### awsDownloader.sh
+Update the path to the location of the script
 ```
 scriptPath = /path/to/folder
 ```
-- Update the path to the location of the script
 
+Update to the named AWS profiles
 ```
 environment=(
 123456789012
@@ -22,8 +23,8 @@ environment=(
 345678901234
 )
 ```
-- Update to the named AWS profiles
 
+Remove any region you won't be in.  It is better to leave the list to the full list as to help find any shadow IT.
 ```
 region=(
 us-east-2
@@ -44,27 +45,26 @@ eu-north-1
 sa-east-1
 )
 ```
-- Remove any region you won't be in.  It is better to leave the list to the full list as to help find any shadow IT.
 
 
 
 #### pyTenable.py
+Update the path to the location of the script
 ```
 script_path = /path/to/folder
 ```
-- Update the path to the location of the script
 
+Update to the Scan ID for your scan.  If you go to your scan, you can look at the URL of the Active Scan and the number after edit would be the Scan ID (https://server.domain.tld/#scans/edit/1).
 ```
 scan_id = 1
 ```
-- Update to the Scan ID for your scan.  If you go to your scan, you can look at the URL of the Active Scan and the number after edit would be the Scan ID (https://server.domain.tld/#scans/edit/1).
 
+Update to the Tenable.sc server path.  This could be a fully qualified domain name or IP address.
 ```
 sc = TenableSC('server.domain.tld')
 ```
-- Update to the Tenable.sc server path.  This could be a fully qualified domain name or IP address.
 
+Update to your username and password for Tenable.sc.  More information about the authentication can be found at (https://pytenable.readthedocs.io/en/stable/sc.html).
 ```
 sc.login('username', 'passwords')
 ```
-- Update to your username and password for Tenable.sc.  More information about the authentication can be found at (https://pytenable.readthedocs.io/en/stable/sc.html).
