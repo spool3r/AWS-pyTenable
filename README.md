@@ -14,7 +14,7 @@ Update the path to the location of the script
 ```
 scriptPath = /path/to/folder
 ```
-
+---
 Update to the named AWS profiles
 ```
 environment=(
@@ -23,7 +23,7 @@ environment=(
 345678901234
 )
 ```
-
+---
 Remove any region you won't be in.  It is better to leave the list to the full list as to help find any shadow IT.
 ```
 region=(
@@ -53,17 +53,17 @@ Update the path to the location of the script
 ```
 script_path = /path/to/folder
 ```
-
+---
 Update to the Scan ID for your scan.  If you go to your scan, you can look at the URL of the Active Scan and the number after edit would be the Scan ID (https://server.domain.tld/#scans/edit/1).
 ```
 scan_id = 1
 ```
-
+---
 Update to the Tenable.sc server path.  This could be a fully qualified domain name or IP address.
 ```
 sc = TenableSC('server.domain.tld')
 ```
-
+---
 Update to your username and password for Tenable.sc.  More information about the authentication can be found at (https://pytenable.readthedocs.io/en/stable/sc.html).
 ```
 sc.login('username', 'passwords')
