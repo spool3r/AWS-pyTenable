@@ -41,6 +41,7 @@ sa-east-1
 - Remove any region you won't be in.  It is better to leave the list to the full list as to help find any shadow IT.
 
 
+
 #### pyTenable.py
 `<script_path = /path/to/folder>`
 - Update the path to the location of the script
