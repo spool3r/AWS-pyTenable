@@ -10,17 +10,22 @@ Using AWS CLI to create a dynamic list of external IPs to scan via Tenable.sc.  
 
 ## Required Updates to files
 #### awsDownloader.sh
-`<scriptPath = /path/to/folder>`
+```
+scriptPath = /path/to/folder
+```
 - Update the path to the location of the script
 
-`<environment=(
+```
+environment=(
 123456789012
 234567890123
 345678901234
-)>`
+)
+```
 - Update to the named AWS profiles
 
-`<region=(
+```
+region=(
 us-east-2
 us-east-1
 us-west-1
@@ -37,20 +42,29 @@ eu-west-2
 eu-west-3
 eu-north-1
 sa-east-1
-)>`
+)
+```
 - Remove any region you won't be in.  It is better to leave the list to the full list as to help find any shadow IT.
 
 
 
 #### pyTenable.py
-`<script_path = /path/to/folder>`
+```
+script_path = /path/to/folder
+```
 - Update the path to the location of the script
 
-`<scan_id = 1>`
+```
+scan_id = 1
+```
 - Update to the Scan ID for your scan.  If you go to your scan, you can look at the URL of the Active Scan and the number after edit would be the Scan ID (https://server.domain.tld/#scans/edit/1).
 
-`<sc = TenableSC('server.domain.tld')>`
+```
+sc = TenableSC('server.domain.tld')
+```
 - Update to the Tenable.sc server path.  This could be a fully qualified domain name or IP address.
 
-`<sc.login('username', 'passwords')>`
+```
+sc.login('username', 'passwords')
+```
 - Update to your username and password for Tenable.sc.  More information about the authentication can be found at (https://pytenable.readthedocs.io/en/stable/sc.html).
