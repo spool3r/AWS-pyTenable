@@ -4,7 +4,7 @@
 # List of Variables for script         #
 ########################################
 
-scriptPath = /path/to/folder
+scriptPath=/path/to/folder
 
 ########################################
 # List of your AWS Environments        #
